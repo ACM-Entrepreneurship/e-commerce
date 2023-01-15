@@ -3,3 +3,4 @@ Note: See package.json file for all necessary dependencies
 - Node: from website nodejs.org/en/download/
 - React
 - Next
+- VS Code
