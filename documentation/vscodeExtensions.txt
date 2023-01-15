@@ -1,0 +1,2 @@
+Extensions from vs code Extensions packet:
+- Simple React Snippet: facilitates typing - typehint

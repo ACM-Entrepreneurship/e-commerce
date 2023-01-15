@@ -1,0 +1,5 @@
+Note: See package.json file for all necessary dependencies
+
+- React
+- Next
+- 
