@@ -1,3 +1,5 @@
 List of useful commands:
 - npx create-next-app <appname>: install react, react-dom and next project using npm [Do not run this for this project!!!!!]
 - npm --help: information on how to use npm command
+- npm install: after every pull from gitHub
+- npm run dev: run the website in development mode
