@@ -105,3 +105,66 @@ a {
     color-scheme: dark;
   }
 }
+
+footer {
+  display: block;
+  font-size: large;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+
+nav {
+  margin: -10px auto 60px;
+  padding: 10px 0;
+  height: 190px;
+  
+  border-bottom: 1px solid black;
+}
+nav .nav-belt {
+  background-color: #1DA5E2;
+  display: -webkit - box;
+  display: -webkit - flex;
+  display: -ms - flexbox;
+  display: flex;
+  height: 120px;
+}
+nav .site-logo{
+  display: inherit;
+
+}
+nav .nav-belt-button {
+  display: flex;
+  position: static;
+  margin: 15px;
+  width: 1750px;
+  font-weight: bolder;
+  font-size: 200%;
+  text-align: center;
+  padding: 30px;
+}
+nav .nav-main{
+  background-color: #FFFFFF;
+  display: -webkit - box;
+  display: -webkit - flex;
+  display: -ms - flexbox;
+  display: flex;
+  height: 60px;
+  padding-top: 23px;
+}
+nav .nav-main .nav-left {
+  font-weight: bolder;
+  font-size: 1px; /*add hamburger element in .js file, this is currently nothing*/
+}
+nav .nav-main .nav-vendor{
+  font-weight: bolder;
+  font-size:1rem;
+}
+nav a {
+  margin-left: 12px;
+}
+nav .site-logo {
+  margin-right: auto;
+}
