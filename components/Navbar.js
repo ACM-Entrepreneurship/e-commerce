@@ -16,7 +16,7 @@ const Navbar = () => {
                         <div className='navbar-search'>
                             <ul>
                                 <li>
-                                    <form>
+                                    <form action=''>
                                         <input type='text' name='main-bar-search' placeholder='search' />
                                     </form>
                                 </li>

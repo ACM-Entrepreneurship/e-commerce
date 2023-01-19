@@ -3,18 +3,19 @@ const Footer = () => {
       <footer>
         <section className='join-mailing-list'>
           <div className='mailing-list'>
-            <form>
-              <input type='email' name='email' placeholder='enter your email and press Enter' />
+            <form action=''>
+              <input type='email' name='email' placeholder='Sign up for newsletter - enter your email' />
             </form>
           </div>
         </section>
         <section className='footer-information'>
           <ul>
-            <li><a>About our E-commerce company</a></li>
-            <li><a>About ACM Entrepreneurship</a></li>
-            <li><a>About MST ACM</a></li>
-            <li><a>Contact</a></li>
-            <li><a>Terms of Service</a></li>
+            <li><a href='/'>About our E-commerce company</a></li>
+            <li><a href='/'>About ACM Entrepreneurship</a></li>
+            <li><a href='/'>About ACM Entrepreneurship</a></li>
+            <li><a href='/'>About MST ACM</a></li>
+            <li><a href='/'>Contact</a></li>
+            <li><a href='/'>Terms of Service</a></li>
           </ul>
         </section>
         <section className='copyright'>

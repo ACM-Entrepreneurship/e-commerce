@@ -13,10 +13,74 @@ export default function Home() {
       <Head>
         <title>ACM-E E-commerce</title>
         <meta name="description" content="E-commerce" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
+      <div>Lorem Ipsum</div>
       </Layout>
     </>
   )
