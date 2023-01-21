@@ -9,13 +9,17 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+}
+
+nav{
+  height: 100%;
+  display: flexbox;
 }
 
 nav .nav-belt {
   position: relative;
   background-color: #1DA5E2;
-  display: inline-block;
   height: 120px;
   width: 100%;
 }
@@ -72,6 +76,100 @@ nav .nav-belt-button .nav-signin{
 nav .nav-belt-button .nav-cart{
   display: block;
   margin-left: 35%;
+}
+
+nav .nav-main{
+  background-color: #037baa;
+  margin-top: -5px;
+  height: 60px;
+  color:white;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-main-option{
+  display: absolute;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: #eee;
+}
+
+.nav-main-option ul{
+  list-style-type: none;
+}
+.nav-main-option li{
+  display: inline-block;
+  list-style-type: none;
+}
+
+.burger{
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  background: white;
+  margin-top: 5px;
+}
+
+.close-burger{
+  cursor: pointer;
+  display: inline-block;
+  padding-top: 10px;
+  margin-left: -50px;
+  transition: all ease-in 0.3s;
+}
+
+.close-burger span {
+  width: 45px;
+  height: 6px;
+  background: #56524e;
+  position: fixed;
+  margin-top: 5px;
+  z-index: 0;
+}
+
+.close-burger.open{
+  margin-left: 260px;
+}
+
+.close-burger span:nth-child(1){
+  transform: rotate(45deg);
+}
+
+.close-burger span:nth-child(2){
+  transform: rotate(-45deg);
+}
+
+.nav-side-menu {
+  color: white;
+  background-color:#56524e;
+  display: flexbox;
+  width: 250px;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  padding-top: 15px;
+  font-size: 22px;
+  padding-left: 3px;
+  overflow-wrap: normal;
+  margin-top: -180px;
+  left:-250px;
+  transition: all ease-in 0.3s;
+}
+
+.nav-side-menu.open{
+  left:0;
+}
+
+.nav-side-menu ul{
+  list-style-type: none;
+}
+
+.nav-side-menu li{
+  line-height: 1.5em;
 }
 
 main {
@@ -132,18 +230,7 @@ footer {
 }
 
 
-nav .nav-main{
-  background-color: #000540;
-  display: -webkit - box;
-  display: -webkit - flex;
-  display: -ms - flexbox;
-  display: flex;
-  height: 60px;
-  color:white;
-  position: relative;
-  padding-top: 23px;
-  text-decoration: none;
-}
+
 nav .nav-main .nav-left {
   font-weight: bolder;
   color:white;
