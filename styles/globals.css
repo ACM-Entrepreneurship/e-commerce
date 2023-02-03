@@ -172,15 +172,6 @@ nav .nav-main{
   line-height: 1.5em;
 }
 
-main {
-  height: 700px;
-  position: relative;
-  max-width: 100%;
-  width: 1200px;
-  margin: 0 auto;
-  background-color: green;
-}
-
 
 footer {
   font-size: large;
