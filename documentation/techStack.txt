@@ -5,3 +5,4 @@ Note: See package.json file for all necessary dependencies
 - Next
 - VS Code
 - Prisma
+- PostgreSQL
