@@ -1,0 +1,9 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL_BjOXW6ZuMU4DOUWIicsAeo7gbqxmJD1tbVDSE9dTPUE2+aehj5uJpPOqmzEz61gU")
+}
+
+model Testing {
+  id         BigInt    @id @default(autoincrement())
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+}
