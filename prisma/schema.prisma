@@ -19,17 +19,28 @@ model User {
   updatedAt DateTime @updatedAt
   email     String   @unique
   image     String?
+  fName     String
+  lName     String
+  username  String?  @unique
+  password  String?
+  cardNumber BigInt @unique
+  cvv     Int?
+  expDate String?
+  nameOnCard String?
+  review String[]
   role      Role     @default(USER)
 }
 
 model Product {
   id          String   @id @default(uuid())
-  createdAt   DateTime @updatedAt
-  title       String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  name       String
   description String
   url         String
   imageUrl    String
   category    String
+  manufacturer String
 }
 
 enum Role {
