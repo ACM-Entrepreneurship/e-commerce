@@ -1,4 +1,5 @@
-
+import "./types/Product";
+import "./types/User";
 import { builder } from "./builder";
 
 export const schema = builder.toSchema()

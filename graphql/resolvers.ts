@@ -1,3 +1,13 @@
+import prisma from '../lib/prisma'
+export const resolvers = {
+  Query: {
+    products: () => {
+      return prisma.product.findMany()
+    },
+  },
+}
+
+/*
 export const resolvers = {
   Query: {
     products: () => {
@@ -33,3 +43,4 @@ export const resolvers = {
     },
   },
 }
+*/
