@@ -16,7 +16,7 @@ export const builder = new SchemaBuilder<{
     client: prisma,
   }
 })
-
+ 
 // 5. 
 builder.queryType({
   fields: (t) => ({
