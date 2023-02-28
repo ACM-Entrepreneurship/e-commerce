@@ -35,11 +35,11 @@ model Product {
   createdAt    DateTime @default(now())
   description  String
   url          String
-  image        String
   category     String
   manufacturer String
   name         String
   updatedAt    DateTime @updatedAt
+  image        String
 }
 
 enum Role {

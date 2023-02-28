@@ -6,7 +6,6 @@ builder.prismaObject('Product', {
     name: t.exposeString('name'),
     description: t.exposeString('description'),
     url: t.exposeString('url'),
-    image: t.exposeString('imageUrl'),
     category: t.exposeString('category'),
     manufacturer: t.exposeString('manufacturer'),
   })
