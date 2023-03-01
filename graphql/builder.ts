@@ -4,6 +4,7 @@ import SchemaBuilder from "@pothos/core";
 import PrismaPlugin from '@pothos/plugin-prisma';
 import type PrismaTypes from '@pothos/plugin-prisma/generated';
 import prisma from "../lib/prisma";
+import RelayPlugin from '@pothos/plugin-relay';
 
 // 2. 
 export const builder = new SchemaBuilder<{
@@ -11,7 +12,8 @@ export const builder = new SchemaBuilder<{
   PrismaTypes: PrismaTypes
 }>({
   // 4.
-  plugins: [PrismaPlugin],
+  plugins: [PrismaPlugin, RelayPlugin],
+  relayOptions: {},
   prisma: {
     client: prisma,
   }

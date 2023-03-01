@@ -1,3 +1,4 @@
+// displaying database data without pagination feature
 import Head from 'next/head'
 import { gql, useQuery } from '@apollo/client'
 import type { Product } from '@prisma/client'
