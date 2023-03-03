@@ -5,11 +5,13 @@ import PrismaPlugin from '@pothos/plugin-prisma';
 import type PrismaTypes from '@pothos/plugin-prisma/generated';
 import prisma from "../lib/prisma";
 import RelayPlugin from '@pothos/plugin-relay';
+import { createContext } from "./context";
 
 // 2. 
 export const builder = new SchemaBuilder<{
   // 3. 
-  PrismaTypes: PrismaTypes
+  PrismaTypes: PrismaTypes,
+  Context: ReturnType<typeof createContext>, // added for authentication
 }>({
   // 4.
   plugins: [PrismaPlugin, RelayPlugin],
