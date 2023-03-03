@@ -8,3 +8,5 @@ Note: See package.json file for all necessary dependencies
 - PostgreSQL
 - Auth0
 - Supabase
+- GraphQL
+- Amazon AWS S3
