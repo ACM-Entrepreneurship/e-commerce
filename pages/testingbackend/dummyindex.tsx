@@ -25,7 +25,11 @@ function Home() {
 
     return (
         <div>
-            You are logged in
+            You are logged in <br/>
+            You can log out here{' '}
+            <Link href="/api/auth/logout">
+                Logout
+            </Link>
         </div>
     );
 }

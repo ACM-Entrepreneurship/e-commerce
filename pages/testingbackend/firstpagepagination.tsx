@@ -17,9 +17,10 @@ const AllProductsQuery = gql`
                     name
                     description
                     url
-                    image
+                    imageUrl
                     category
                     manufacturer
+                    price
                 }
             }
         }
@@ -43,12 +44,13 @@ export default function firstpagefx() {
                 <ul>
                     {data?.products.edges.map(({ node }: { node: Product }) =>(
                         <li key={node.id}>
-                            <img src={node.image} />
+                            <img src={node.imageUrl} height={200} width={200} />
                             <div>
                                 <p>{node.category}</p>
                                 <p>{node.name}</p>
                                 <p>{node.description}</p>
                                 <p>{node.manufacturer}</p>
+                                <p>{node.price}</p>
                                 <a href={node.url}>
                                     {node.url.replace(/(^\w+:|^)\/\//, '')}
                                 </a>

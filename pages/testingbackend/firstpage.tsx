@@ -10,9 +10,10 @@ const AllProductsQuery = gql`
             name
             description
             url
-            image
+            imageUrl
             category
             manufacturer
+            price
         }
     }
 `
@@ -31,12 +32,13 @@ export default function firstpagefx() {
                 <ul>
                     {data.products.map((product: Product) =>(
                         <li key={product.id}>
-                            <img src={product.image} />
+                            <img src={product.imageUrl} />
                             <div>
                                 <p>{product.category}</p>
                                 <p>{product.name}</p>
                                 <p>{product.description}</p>
                                 <p>{product.manufacturer}</p>
+                                <p>{product.price}</p>
                                 <a href={product.url}>
                                     {product.url.replace(/(^\w+:|^)\/\//, '')}
                                 </a>

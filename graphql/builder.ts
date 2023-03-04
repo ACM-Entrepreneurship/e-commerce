@@ -29,3 +29,5 @@ builder.queryType({
     }),
   }),
 });
+
+// builder.mutationType({}) // add this for authentication - creating products (follow tutorial for more)

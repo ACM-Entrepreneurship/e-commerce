@@ -24,8 +24,8 @@ model User {
   email     String   @unique
   image     String?
   role      Role     @default(USER)
-  fName     String
-  lName     String
+  fName     String?
+  lName     String?
   password  String?
   username  String?  @unique
 }
@@ -39,7 +39,8 @@ model Product {
   manufacturer String
   name         String
   updatedAt    DateTime @updatedAt
-  image        String
+  imageUrl     String
+  price        Float    @default(0)
 }
 
 enum Role {
