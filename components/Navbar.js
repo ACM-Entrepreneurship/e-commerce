@@ -43,7 +43,7 @@ const Navbar = () => {
                     <li>
                         <div className='nav-signin'>
                             <Image src='/signin-icon.png' alt='main signin icon' width={30} height={30} />
-                            <a href='/'>Welcome<br />Sign in/Sign up</a>
+                            <a href='/api/auth/login'>Welcome<br />Sign in</a> 
                         </div>
                     </li>
                     <li>
