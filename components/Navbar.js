@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 //import openSideNav from "components/Sidenavbar"
-
+import { useUser } from '@auth0/nextjs-auth0/client';
 const openSideNav = () => {
     return (
         (document.getElementById("close-burger").style.marginLeft = "260px")
@@ -17,7 +17,13 @@ const openSideNav = () => {
  }
 
 const Navbar = () => {
-  return (
+
+    const {user} = useUser(); // Pull from login context
+    const profile_image = user ? user.picture : '/signin-icon.png'
+
+    let login = user ?  (<a href="/api/auth/logout?returnTo=/">Logout</a>) : (<a href='/api/auth/login'>Login</a>)
+
+    return (
     <nav>
         <div className='nav-belt'>
             <div className='site-logo'>
@@ -42,13 +48,16 @@ const Navbar = () => {
                     </li>
                     <li>
                         <div className='nav-signin'>
-                            <Image src='/signin-icon.png' alt='main signin icon' width={30} height={30} />
-                            <a href='/api/auth/login'>Welcome<br />Sign in</a> 
+                            <a href="/profile">
+                                <img src={profile_image} alt='main signin icon' width={30} height={30} />
+                            </a>
+
+                            { login }
                         </div>
                     </li>
                     <li>
                         <div className='nav-cart'>
-                            <a href='/'>
+                            <a href='/shoppingCart'>
                                 <Image src='/shopping-cart.png' alt='main shopping cart icon' width={60} height={60} />
                             </a>
                         </div>
