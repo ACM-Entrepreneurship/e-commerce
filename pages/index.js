@@ -14,7 +14,7 @@ export default function Home() {
       
       <Layout>
       <Head>
-        <title>ACM-E E-commerce</title>
+        <title>MinerWarehouse Home</title>
         <meta name="description" content="E-commerce" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 //import openSideNav from "components/Sidenavbar"
 
+
 const openSideNav = () => {
     return (
         (document.getElementById("close-burger").style.marginLeft = "260px")
@@ -21,7 +22,9 @@ const Navbar = () => {
     <nav>
         <div className='nav-belt'>
             <div className='site-logo'>
-                <Image src='/site-logo.png' alt='site logo' width={140} height={120} />
+                <a href='/'>
+                    <Image src='/minerwarehouse_logo.png' alt='site logo' width={140} height={120} />
+                </a>
             </div>
             <div className='close-burger' id='close-burger' onClick={()=>closeSideNav()}>
                 <span></span>
@@ -43,12 +46,12 @@ const Navbar = () => {
                     <li>
                         <div className='nav-signin'>
                             <Image src='/signin-icon.png' alt='main signin icon' width={30} height={30} />
-                            <a href='/'>Welcome<br />Sign in/Sign up</a>
+                            <a href="/create-account">Welcome<br />Sign in/Sign up</a>
                         </div>
                     </li>
                     <li>
                         <div className='nav-cart'>
-                            <a href='/'>
+                            <a href='/shopping-cart'>
                                 <Image src='/shopping-cart.png' alt='main shopping cart icon' width={60} height={60} />
                             </a>
                         </div>

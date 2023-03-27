@@ -1,0 +1,113 @@
+.row1 {
+    margin: auto;
+}
+.column_1 {
+    background-color: grey;
+    height: 500px;
+    width: 15%;
+    float: left;
+    margin: 50px 25px;
+}
+.column_2 {
+    background-color: rgb(172, 175, 172);
+    height: 500px;
+    width: 25%;
+    float: left;
+    margin: 50px 25px;
+}
+.column_3 {
+    height: 500px;
+    width: 25%;
+    float: left;
+    margin: 50px 25px;
+}
+.column_4 {
+    background-color: rgb(226, 226, 237);
+    height: 500px;
+    width: 15%;
+    float: left;
+    margin: 50px 25px;
+    border-radius: 15px;
+}
+
+.prodInfoLayout {
+    margin-top: 25%;
+    margin-left: 3%;
+}
+
+#prodTitle {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.prodPrice {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.topBorderLine {
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 10px;
+}
+
+.topBorderLine2{
+    margin-top: 33%;
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 10px; 
+}
+.productInfoPt {
+    margin-left: 5%;
+}
+
+.stockInfo {
+    margin-top: 40%;
+    margin-left: 5%;
+    color: rgb(36, 219, 36);
+}
+
+.cartBtn {
+    background-color: rgb(246, 246, 26);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 180px;
+    margin-left: 37px;
+    width: 75%;
+    height: 50px;
+}
+.cartBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+
+.buyBtn {
+    background-color: rgb(246, 154, 26);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 37px;
+    width: 75%;
+    height: 50px;
+}
+
+.buyBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+.Image {
+    list-style-type: none;
+}
+.productInfo {
+    margin-left: 5%;
+    text-align: left;
+}
+.clr{
+    clear:both;
+}
