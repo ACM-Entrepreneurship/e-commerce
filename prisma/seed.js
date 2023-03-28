@@ -17,7 +17,7 @@ async function main() {
         title: 'test',
         description: 'this is a test',
         url: 'testing/test',
-        imageUrl: 'testing/image',
+        image: 'testing/image',
         category: 'testing'
     }
   })
