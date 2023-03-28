@@ -4,3 +4,10 @@ Note: See package.json file for all necessary dependencies
 - React
 - Next
 - VS Code
+- Prisma
+- PostgreSQL
+- Auth0
+- Ngrok
+- Supabase
+- GraphQL
+- Amazon AWS S3

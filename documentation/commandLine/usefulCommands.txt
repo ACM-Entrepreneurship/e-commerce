@@ -3,3 +3,18 @@ List of useful commands:
 - npm --help: information on how to use npm command
 - npm install: after every pull from gitHub
 - npm run dev: run the website in development mode
+
+DB:
+- Changes
+    - After manual local change:
+        - npx prisma migrate reset
+        - npx prisma migrate dev
+    - After manual remote change:
+        - npx prisma db pull
+        - npx prisma migrate dev --name introspected_change
+    - More infor: https://www.prisma.io/docs/guides/database/developing-with-prisma-migrate/troubleshooting-development
+    
+Authentication
+- Make localhost:3000 availabe
+    - npx ngrok http 3000 --authtoken "2MWhmVntUyhiDnoxEGrMqftPjKv_7rpoT23K3fvZpxTFAzVEG"
+    

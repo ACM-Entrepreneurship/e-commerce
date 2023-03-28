@@ -9,11 +9,33 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.9",
+    "@auth0/nextjs-auth0": "^2.2.2",
+    "@emotion/react": "^11.10.6",
     "@next/font": "13.1.2",
+    "@pothos/core": "^3.25.0",
+    "@pothos/plugin-prisma": "^3.41.0",
+    "@pothos/plugin-relay": "^3.37.0",
+    "@prisma/client": "^4.10.1",
+    "@prisma/fetch-engine": "4.10.1",
+    "aws-sdk": "^2.1328.0",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.2",
+    "graphql": "^16.6.0",
+    "graphql-yoga": "^3.6.0",
     "next": "13.1.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.4",
+    "react-hot-toast": "^2.4.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.20.13",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "prisma": "^4.10.1"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   }
 }
