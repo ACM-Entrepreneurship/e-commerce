@@ -1,13 +1,56 @@
-.mainLayout {
+.nav {
+    margin-left: 20%;
     margin-top: 5%;
+}
+
+.nav li {
+    display: inline;
+    padding: 2px;
+}
+
+.nav li a{
+    color: orange;
+}
+
+.mainLayout {
+    margin-top: 2%;
     
 }
+.btnLayout ul {
+    margin-left: 20%;
+}
+.btnLayout li {
+    display: inline;
+}
+.btnLayout button {
+    background-color: #333;
+    color:#fff;
+    padding: 10px 15px;
+    border: none;
+    /*width: 30%;*/
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.btnLayout button:hover {
+    background-color: red;
+    color:#fff;
+}
 .orderLayout {
-    background-color: #eadddd;
-    height: 300px;
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 10px;
+}
+
+.orderLayout ul {
+    list-style: none;
+}
+.orderLayout ul li {
+    background-color: aliceblue;
+    width: auto;
+    height: 400px;
+    border-radius: 10px;
+
 }
 
 .subTitle {

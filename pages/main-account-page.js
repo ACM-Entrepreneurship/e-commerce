@@ -21,9 +21,15 @@ export default function MainAccountPage(){
                 <h1>Your Account</h1>
                 <br/> 
                 <div>
-                    <button class={styles.btn}>Your Orders</button>
-                    <button class={styles.btn}>Login & Security</button>
-                    <button class={styles.btn}>Payment Methods</button>
+                    <a href="/your-orders-page">
+                        <button class={styles.btn}>Your Orders</button>
+                    </a>
+                    <a href="/payment-methods">
+                        <button class={styles.btn}>Payment Methods</button>
+                    </a>
+                   <a href="/login-security-page">
+                        <button class={styles.btn}>Login & Security</button>
+                   </a>
                 </div>
             </div>
             <div class={styles.whitespace}></div>
