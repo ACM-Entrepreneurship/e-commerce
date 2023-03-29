@@ -27,8 +27,8 @@ async function createCheckoutSession(req: NextApiRequest, res: NextApiResponse) 
             }
         ],
         mode: 'payment',
-        success_url: API_HOST + '/api/payment/success',
-        cancel_url: API_HOST + '/api/payment/failure'
+        success_url: API_HOST + '/payment-success',
+        cancel_url: API_HOST + '/payment-failure'
     })
 
     return res.status(303).redirect(session.url)
