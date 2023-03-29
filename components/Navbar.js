@@ -48,7 +48,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <div className='nav-cart'>
-                            <a href='/'>
+                            <a href='/api/payment/create-checkout-session'>
                                 <Image src='/shopping-cart.png' alt='main shopping cart icon' width={60} height={60} />
                             </a>
                         </div>
