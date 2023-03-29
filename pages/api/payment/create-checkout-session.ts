@@ -8,7 +8,11 @@ const stripe = new Stripe(SECRET);
 
 export default
 async function createCheckoutSession(req: NextApiRequest, res: NextApiResponse) {
-
+    /**
+     * TODO 
+     * 1. Get Cart Information
+     * 2. Shipping Information -- https://stripe.com/docs/payments/checkout/shipping
+     */  
     const session = await stripe.checkout.sessions.create({
         line_items: [
             {
