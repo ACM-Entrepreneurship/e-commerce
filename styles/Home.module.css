@@ -5,15 +5,6 @@
   border: 1px solid black;
 }
 
-.productsgallery{
-  border: 1px solid black;
-  height: 200px;
-  padding: 5px;
-  margin: 15px;
-}
-
-
-
 
 /* PRODUCTS */
 .product {
@@ -37,23 +28,28 @@
   display: none;
 }
 
+.productlinks {
+  text-decoration: none;
+  color: black;
+}
+
 .productcard {
   flex: 0 0 auto;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 400px;
   margin-right: 40px;
 }
 
 .productimage {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 250px;
   overflow: hidden;
 }
 
 .productthumb {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
 }
 
@@ -141,7 +137,7 @@
 }
 
 .prebtn img,
-.nxt-btn img {
+.nxtbtn img {
   opacity: 0.2;
 }
 
@@ -181,6 +177,34 @@
 .collection:nth-child(3) {
   grid-column: span 2;
   margin-bottom: 10px;
+}
+
+.adcontainer{
+  border: 1px solid palevioletred;
+  height: 200px;
+  padding: 0px;
+  margin: 15px 0;
+}
+
+.adlink {
+  text-decoration: none;
+  color: black;
+}
+
+.oneadbanner {
+  border: 1px solid black;
+  height: 190px;
+  padding: 5px;
+  margin: 3px;
+}
+
+.halfadbanner {
+  border: 1px solid black;
+  width: 50%;
+  float: left;
+  height: 190px;
+  padding: 5px;
+  margin: 3px 0px;
 }
 
 
