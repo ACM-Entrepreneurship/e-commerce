@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
-import styles from '@/styles/sign-in.module.css';
-import Layout from '@/components/Layout';
-import Navbar from '@/components/Navbar';
+import styles from '../styles/sign-in.module.css';
+import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
 import Link from 'next/link';
 
-export default function CreateAccoutPage(){
+export default function createAccountPage(){
     return (
         <>
         <Head>

@@ -1,0 +1,23 @@
+.mainLayout {
+    margin-top: 5%;
+    
+}
+.orderLayout {
+    background-color: #eadddd;
+    height: 300px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+}
+
+.subTitle {
+    text-align: center;
+    text-decoration: underline;
+}
+.endWS {
+    margin-top: 30%;
+}
+
+.orderTitle {
+    margin-left: 20%;
+}
