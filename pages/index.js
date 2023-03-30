@@ -38,8 +38,18 @@ export default function Home() {
 
   const { data, loading, error, fetchMore } = useQuery(AllProductsQuery, { variables: { first: 40},});
 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Oh no... {error.message}</p>
+  if (loading) return <div class={styles.loading}>
+                        <div class={styles.wave}></div>
+                        <div class={styles.wave}></div>
+                        <div class={styles.wave}></div>
+                        <div class={styles.wave}></div>
+                        <div class={styles.wave}></div>
+                        <div class={styles.wave}></div>
+                      </div>
+  if (error) return <div class={styles.fetchingerror}>
+                      Sorry, an error occured while fetching the database... <br/>
+                      Error message: {error.message}
+                    </div>
 
   const { endCursor, hasNextPage } = data.products.pageInfo;
 
@@ -61,7 +71,6 @@ export default function Home() {
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />
-                    <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
                     <h2 class={styles.productname}>{node.name}</h2>
@@ -91,7 +100,6 @@ export default function Home() {
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />
-                    <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
                     <h2 class={styles.productname}>{node.name}</h2>
@@ -113,7 +121,6 @@ export default function Home() {
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />
-                    <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
                     <h2 class={styles.productname}>{node.name}</h2>
@@ -148,7 +155,6 @@ export default function Home() {
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />
-                    <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
                     <h2 class={styles.productname}>{node.name}</h2>
