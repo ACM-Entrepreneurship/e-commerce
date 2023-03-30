@@ -1,3 +1,219 @@
+.bodydiv {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+.productcontainer {
+  padding: 0 0vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin: 15px;
+
+}
+
+.productcontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.productlinks {
+  text-decoration: none;
+  color: black;
+}
+
+.productcard {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 400px;
+  margin-right: 40px;
+}
+
+.productimage {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.productthumb {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+.cardbtn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.productcard:hover .card-btn {
+  opacity: 1;
+}
+
+.cardbtn:hover {
+  background: #ff7d7d;
+  color: #fff;
+}
+
+.productinfo {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.productname {
+  text-transform: uppercase;
+}
+
+.productshortdescription {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.actualprice {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.prebtn,
+.nxtbtn {
+  border: none;
+  width: 1vw;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  margin-top: 7%;
+  z-index: 8;
+}
+
+.prebtn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxtbtn {
+  right: 0;
+}
+
+.prebtn img,
+.nxtbtn img {
+  opacity: 0.2;
+}
+
+.prebtn:hover img,
+.nxtbtn:hover img {
+  opacity: 1;
+}
+
+.collectioncontainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+.adcontainer{
+  height: 200px;
+  padding: 0px;
+  margin: 15px 0;
+}
+
+.adlink {
+  text-decoration: none;
+  color: black;
+}
+
+.oneadbanner {
+  border: 1px solid black;
+  height: 190px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.halfadbanner {
+  border: 1px solid black;
+  width: 50%;
+  float: left;
+  height: 190px;
+  padding: 0px;
+  margin: 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .main {
   display: flex;
   flex-direction: column;
