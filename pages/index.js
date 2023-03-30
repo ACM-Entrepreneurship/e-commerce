@@ -36,7 +36,7 @@ const AllProductsQuery = gql`
 
 export default function Home() {
 
-  const { data, loading, error, fetchMore } = useQuery(AllProductsQuery, { variables: { first: 10},});
+  const { data, loading, error, fetchMore } = useQuery(AllProductsQuery, { variables: { first: 40},});
 
   if (loading) return <p>Loading...</p>
   if (error) return <p>Oh no... {error.message}</p>
@@ -56,7 +56,7 @@ export default function Home() {
           <button  class={styles.prebtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("firstproductcontainer").scrollLeft -= 500}}/></button>
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("firstproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='firstproductcontainer'>
-            {data?.products.edges.map(({ node }) =>(
+            {data?.products.edges.slice(0,10).map(({ node }) =>(
               <Link href="#" class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
@@ -64,7 +64,7 @@ export default function Home() {
                     <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
-                    <h2 class={styles.productbrand}>{node.manufacturer}</h2>
+                    <h2 class={styles.productname}>{node.name}</h2>
                     <p class={styles.productshortdescription}>{node.description}</p>
                     <span class={styles.price}>${node.price}</span>
                   </div>   
@@ -76,12 +76,8 @@ export default function Home() {
 
         <div class={styles.adcontainer}>
           <div class={styles.oneadbanner}>
-          <Link href="#" class={styles.adlink}>
-              <div>This </div>
-              <div>displays</div>
-              <div> an </div>
-              <div> ad </div>
-              <div> banner </div>
+            <Link href="#" class={styles.adlink}>
+              <Image src="/acme/acme_ad_banner.png" height={190} width={1425} alt="" />
             </Link>
           </div>
         </div>
@@ -90,7 +86,7 @@ export default function Home() {
           <button  class={styles.prebtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("secondproductcontainer").scrollLeft -= 500}}/></button>
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("secondproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='secondproductcontainer'>
-            {data?.products.edges.map(({ node }) =>(
+            {data?.products.edges.slice(10,20).map(({ node }) =>(
               <Link href="#" class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
@@ -98,7 +94,7 @@ export default function Home() {
                     <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
-                    <h2 class={styles.productbrand}>{node.manufacturer}</h2>
+                    <h2 class={styles.productname}>{node.name}</h2>
                     <p class={styles.productshortdescription}>{node.description}</p>
                     <span class={styles.price}>${node.price}</span>
                   </div>   
@@ -112,7 +108,7 @@ export default function Home() {
           <button  class={styles.prebtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("thirdproductcontainer").scrollLeft -= 500}}/></button>
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("thirdproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='thirdproductcontainer'>
-            {data?.products.edges.map(({ node }) =>(
+            {data?.products.edges.slice(20,30).map(({ node }) =>(
               <Link href="#" class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
@@ -120,7 +116,7 @@ export default function Home() {
                     <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
-                    <h2 class={styles.productbrand}>{node.manufacturer}</h2>
+                    <h2 class={styles.productname}>{node.name}</h2>
                     <p class={styles.productshortdescription}>{node.description}</p>
                     <span class={styles.price}>${node.price}</span>
                   </div>   
@@ -129,24 +125,16 @@ export default function Home() {
             ))}
             </div>
         </section>
-
+ 
         <div class={styles.adcontainer}>
           <div class={styles.halfadbanner}>
             <Link href="#" class={styles.adlink}>
-              <div>This </div>
-              <div>displays</div>
-              <div> an </div>
-              <div> ad </div>
-              <div> banner </div>
+              <Image src="/acme/gems_genesis_ad_banner.png" height={190} width={710} alt="" />
             </Link>
           </div>
           <div class={styles.halfadbanner}>
             <Link href="#" class={styles.adlink}>
-              <div>This </div>
-              <div>displays</div>
-              <div> an </div>
-              <div> ad </div>
-              <div> banner </div>
+              <Image src="/acme/acme_podcast_ad_banner.png" height={190} width={710} alt="" />
             </Link>
           </div>
         </div>
@@ -155,7 +143,7 @@ export default function Home() {
           <button  class={styles.prebtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("fourthproductcontainer").scrollLeft -= 500}}/></button>
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("fourthproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='fourthproductcontainer'>
-            {data?.products.edges.map(({ node }) =>(
+            {data?.products.edges.slice(30,40).map(({ node }) =>(
               <Link href="#" class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
@@ -163,7 +151,7 @@ export default function Home() {
                     <button class={styles.cardbtn}>add to wishlist</button>
                   </div>
                   <div class={styles.productinfo}>
-                    <h2 class={styles.productbrand}>{node.manufacturer}</h2>
+                    <h2 class={styles.productname}>{node.name}</h2>
                     <p class={styles.productshortdescription}>{node.description}</p>
                     <span class={styles.price}>${node.price}</span>
                   </div>   

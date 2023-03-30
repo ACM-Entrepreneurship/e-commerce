@@ -2,7 +2,6 @@
   height: 100%;
   width: 75%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 
@@ -11,7 +10,7 @@
   position: relative;
   overflow: hidden;
   padding: 10px;
-  border: 1px solid red;
+  background-color: aliceblue;
 }
 
 .productcontainer {
@@ -21,7 +20,6 @@
   scroll-behavior: smooth;
   margin: 15px;
 
-  border: 1px solid green;
 }
 
 .productcontainer::-webkit-scrollbar {
@@ -86,7 +84,7 @@
   padding-top: 10px;
 }
 
-.productbrand {
+.productname {
   text-transform: uppercase;
 }
 
@@ -180,7 +178,6 @@
 }
 
 .adcontainer{
-  border: 1px solid palevioletred;
   height: 200px;
   padding: 0px;
   margin: 15px 0;
@@ -194,8 +191,8 @@
 .oneadbanner {
   border: 1px solid black;
   height: 190px;
-  padding: 5px;
-  margin: 3px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .halfadbanner {
@@ -203,8 +200,8 @@
   width: 50%;
   float: left;
   height: 190px;
-  padding: 5px;
-  margin: 3px 0px;
+  padding: 0px;
+  margin: 0px 0px;
 }
 
 
