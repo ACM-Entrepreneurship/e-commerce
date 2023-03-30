@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
-import styles from '../styles/your-account.module.css';
-import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
+import styles from '../../styles/your-account.module.css';
+import Layout from '../../components/Layout';
+import Navbar from '../../components/Navbar';
 import Link from 'next/link';
 
 export default function MainAccountPage(){
@@ -21,13 +21,13 @@ export default function MainAccountPage(){
                 <h1>Your Account</h1>
                 <br/> 
                 <div>
-                    <a href="/your-orders-page">
+                    <a href="/main-account/your-orders-page">
                         <button class={styles.btn}>Your Orders</button>
                     </a>
-                    <a href="/payment-methods">
+                    <a href="/main-account/payment-methods">
                         <button class={styles.btn}>Payment Methods</button>
                     </a>
-                   <a href="/login-security-page">
+                   <a href="/main-account/login-security-page">
                         <button class={styles.btn}>Login & Security</button>
                    </a>
                 </div>

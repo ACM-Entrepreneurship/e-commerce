@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Layout from '../components/Layout';
-import styles from '../styles/your-orders.module.css';
+import Layout from '../../components/Layout';
+import styles from '../../styles/your-orders.module.css';
 
 export default function yourOrdersPage(){
     return  (
@@ -13,7 +13,7 @@ export default function yourOrdersPage(){
             </Head>
             <div class={styles.nav}>
                 <ul>
-                    <li><a href="/main-account-page">Main Account</a></li>
+                    <li><a href="/main-account/main-account-page">Main Account</a></li>
                     <li> \ </li>
                     <li>Your Orders</li>
                 </ul>

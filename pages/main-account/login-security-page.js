@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Layout from '../components/Layout';
-import styles from '../styles/login-security.module.css';
+import Layout from '../../components/Layout';
+import styles from '../../styles/login-security.module.css';
 
 export default function loginSecurityPage(){
     return  (
@@ -13,7 +13,7 @@ export default function loginSecurityPage(){
             </Head>
             <div class={styles.nav}>
                 <ul>
-                    <li><a href="/main-account-page">Main Account</a></li>
+                    <li><a href="/main-account/main-account-page">Main Account</a></li>
                     <li> \ </li>
                     <li>Login & Security</li>
                 </ul>
