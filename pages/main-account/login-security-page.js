@@ -20,6 +20,39 @@ export default function loginSecurityPage(){
             </div>
             <div class={styles.endWS}></div>
 
+            <div class={styles.space}></div>
+            <div class={styles.mainLayout}>
+                <div class={styles.login}>
+                    <h1>Login & Security</h1>
+                </div>
+
+                <div class={styles.myform}>
+                    <div class={styles.formgroup}>
+                        <label>Name: </label>
+                                
+                        <input class={styles.button} type="submit" value="Edit" name=""></input>
+                                
+                    </div>
+                    <div class={styles.formgroup}>
+                        <label>Email: </label>
+                                
+                        <input class={styles.button} type="submit" value="Edit" name=""></input>
+                    </div>
+                    <div class={styles.formgroup}>
+                        <label>Primary Moblie Number: </label>
+                            
+                        <input class={styles.button} type="submit" value="Edit" name=""></input>
+                    </div>
+                    <div class={styles.formgroup}>
+                        <label>Password: </label>
+                                
+                        <input class={styles.button} type="submit" value="Edit" name=""></input>
+                    </div>
+                </div>
+            </div>
+            <div class={styles.space}></div>
+
+
             </Layout>
 
         </>
