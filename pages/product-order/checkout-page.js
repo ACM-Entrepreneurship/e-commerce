@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from '@next/font/google';
-import styles from '../styles/checkout.module.css';
+import styles from '../../styles/checkout.module.css';
 import Link from 'next/link';
 import { AiOutlineLock} from 'react-icons/ai';
 export default function CheckOutPage(){

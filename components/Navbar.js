@@ -46,12 +46,12 @@ const Navbar = () => {
                     <li>
                         <div className='nav-signin'>
                             <Image src='/signin-icon.png' alt='main signin icon' width={30} height={30} />
-                            <a href="/create-account">Welcome<br />Sign in/Sign up</a>
+                            <a href="/user-login/create-account">Welcome<br />Sign in/Sign up</a>
                         </div>
                     </li>
                     <li>
                         <div className='nav-cart'>
-                            <a href='/shopping-cart'>
+                            <a href='/product-order/shopping-cart'>
                                 <Image src='/shopping-cart.png' alt='main shopping cart icon' width={60} height={60} />
                             </a>
                         </div>
