@@ -12,6 +12,12 @@ html,body
     overflow-x: hidden;
 }
 
+.bodydiv {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+}
+
 nav{
   height: 100%;
   display: flexbox;
