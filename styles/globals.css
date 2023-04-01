@@ -164,6 +164,7 @@ nav .nav-main{
   margin-top: -180px;
   left:-250px;
   transition: all ease-in 0.3s;
+  z-index: 50;
 }
 
 .nav-side-menu.open{
