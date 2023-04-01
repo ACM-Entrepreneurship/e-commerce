@@ -34,7 +34,7 @@ export default function ShoppingCartPage(){
             <div class={styles.priceSideBar}>
                 <h2 class={styles.totalSideBar}>Subtotal (0 items):</h2>
                 <h1 class={styles.totalPriceSB}>$0.00</h1>
-                <button class={styles.checkoutBtn}>Proceed To Checkout</button>
+                <button id={styles.checkoutBtn}>Proceed To Checkout</button>
             </div>
             <div class={styles.whitespace}></div>
                 

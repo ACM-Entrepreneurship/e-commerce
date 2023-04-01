@@ -61,7 +61,7 @@
     margin-top: 60px;
 }
 
-.checkoutBtn {
+#checkoutBtn {
     background-color: rgb(246, 246, 26);
     color: black;
     padding: 10px 15px;
@@ -74,10 +74,11 @@
     height: 50px;
 }
 
-.checkoutBtn:hover {
+#checkoutBtn:hover {
     background-color: red;
     color:#fff;
 }
+
 .whitespace {
     margin-top: 80%;
 }
