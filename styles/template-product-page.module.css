@@ -111,3 +111,18 @@
 .clr{
     clear:both;
 }
+
+.buyBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+.Image {
+    list-style-type: none;
+}
+.productInfo {
+    margin-left: 5%;
+    text-align: left;
+}
+.clr{
+    clear:both;
+}

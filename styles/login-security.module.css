@@ -1,0 +1,13 @@
+.nav {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.nav li {
+    display: inline;
+    padding: 2px;
+}
+
+.nav li a{
+    color: orange;
+}

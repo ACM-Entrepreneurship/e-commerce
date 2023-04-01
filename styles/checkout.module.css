@@ -1,0 +1,108 @@
+.header {
+    position: relative;
+    background-color: #1DA5E2;
+    height: 120px;
+    width: 100%;
+}
+
+.header h1 {
+    padding-top: 2%;
+    padding-left: 5%;
+    color: black;
+    float: left;
+
+}
+
+.pic {
+    padding-left: 30%;
+    float: left;
+}
+
+.lock {
+    margin-left: 5%;
+    color: white;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.leftCol {
+    background-color: #eadddd;
+    height: 900px;
+    width: 50%;
+    float: left;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.container {
+    width: 90%;
+    height: 80px;
+    background-color: darkkhaki;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.container p {
+    text-align: center;
+}
+
+.rightCol {
+    background-color: #eadddd;
+    height: 600px;
+    width: 30%;
+    float: left;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 5%;   
+}
+
+.rightCol h6 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.rightCol li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.box1 {
+    margin-left: 3%;
+    margin-top: 10%;
+}
+
+.box2 {
+    margin-left: 3%;
+    margin-top: 40%;
+}
+
+
+
+.checkoutBtn {
+    background-color: rgb(246, 246, 26);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-left: 150px;
+    width: 50%;
+    height: 60px;
+}
+
+.checkoutBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+
+.clr {
+    clear: both;
+}
+
+.whitespace{
+    margin-top: 20%;
+}
