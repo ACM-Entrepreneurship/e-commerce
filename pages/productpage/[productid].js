@@ -60,9 +60,9 @@ export default function ProductPage(props){
             <div class={styles.row1}>
                 <div class={styles.column_1}>
                     <ul class={styles.productImages}>
-                        <li class={styles.Image}>Image 1</li>
-                        <li class={styles.Image}>Image 2</li>
-                        <li class={styles.Image}>Image 3</li>
+                        <li class={styles.Image} key="">Image 1</li>
+                        <li class={styles.Image} key="">Image 2</li>
+                        <li class={styles.Image} key="">Image 3</li>
                     </ul>
                 </div>
                 <div class={styles.column_2}>
@@ -75,10 +75,10 @@ export default function ProductPage(props){
                     <div class={styles.prodInfoLayout}>
                         <h3>Product Description: </h3>
                         <ul class={styles.productDescipList}>
-                            <li class={styles.productInfoPt}>Name: {name}</li>
-                            <li class={styles.productInfoPt}>Description: {description}</li>
-                            <li class={styles.productInfoPt}>Manufacturer: {manufacturer}</li>
-                            <li class={styles.productInfoPt}>Category: {category}</li>
+                            <li class={styles.productInfoPt} key="">Name: {name}</li>
+                            <li class={styles.productInfoPt} key="">Description: {description}</li>
+                            <li class={styles.productInfoPt} key="">Manufacturer: {manufacturer}</li>
+                            <li class={styles.productInfoPt} key="">Category: {category}</li>
                         </ul>
                     </div>
                     <div class={styles.topBorderLine2}></div>
@@ -97,13 +97,13 @@ export default function ProductPage(props){
             <div class={styles.productInfo}>
                 <h1>Product Information</h1>
                 <ul>
-                    <li>Product Dimension: </li>
-                    <li>Item Weight: </li>
-                    <li>ACM-E SIN: </li>
-                    <li>Item Model Number: </li>
-                    <li>Manufacturer: </li>
-                    <li>Customer Reviews: </li>
-                    <li>Date First Available: </li>
+                    <li key="">Product Dimension: </li>
+                    <li key="">Item Weight: </li>
+                    <li key="">ACM-E SIN: </li>
+                    <li key="">Item Model Number: </li>
+                    <li key="">Manufacturer: </li>
+                    <li key="">Customer Reviews: </li>
+                    <li key="">Date First Available: </li>
                 </ul>
             </div>
 
@@ -112,18 +112,18 @@ export default function ProductPage(props){
                 <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("firstproductcontainer").scrollLeft += 500}}/></button>
                     <div class={styles.productcontainer} id='firstproductcontainer'>
                     {data?.slice(0,10).map((node) =>(
-                    <Link href={"/productpage/" + node.id} class={styles.productlinks}>
-                        <div class={styles.productcard} key={node.id}>
-                        <div class={styles.productimage}>
-                            <img src={node.imageUrl} class={styles.productimage} height={150} width={150} alt="" />
-                        </div>
-                        <div class={styles.productinfo}>
-                            <h2 class={styles.productname}>{node.name}</h2>
-                            <p class={styles.productshortdescription}>{node.description}</p>
-                            <span class={styles.price}>${node.price}</span>
-                        </div>   
-                        </div>
-                    </Link>
+                        <Link href={"/productpage/" + node.id} class={styles.productlinks}>
+                            <div class={styles.productcard} key={node.id}>
+                                <div class={styles.productimage}>
+                                    <img src={node.imageUrl} class={styles.productimage} height={150} width={150} alt="" />
+                                </div>
+                                <div class={styles.productinfo}>
+                                    <h2 class={styles.productname}>{node.name}</h2>
+                                    <p class={styles.productshortdescription}>{node.description}</p>
+                                    <span class={styles.price}>${node.price}</span>
+                                </div>   
+                            </div>
+                        </Link>
                     ))}
                     </div>
             </section>
