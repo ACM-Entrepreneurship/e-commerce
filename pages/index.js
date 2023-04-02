@@ -67,7 +67,7 @@ export default function Home() {
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("firstproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='firstproductcontainer'>
             {data?.products.edges.slice(0,10).map(({ node }) =>(
-              <Link href="#" class={styles.productlinks}>
+              <Link href={"/productpage/" + node.id} class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />
@@ -96,7 +96,7 @@ export default function Home() {
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("secondproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='secondproductcontainer'>
             {data?.products.edges.slice(10,20).map(({ node }) =>(
-              <Link href="#" class={styles.productlinks}>
+              <Link href={"/productpage/" + node.id} class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />
@@ -117,7 +117,7 @@ export default function Home() {
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("thirdproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='thirdproductcontainer'>
             {data?.products.edges.slice(20,30).map(({ node }) =>(
-              <Link href="#" class={styles.productlinks}>
+              <Link href={"/productpage/" + node.id} class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />
@@ -151,7 +151,7 @@ export default function Home() {
           <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("fourthproductcontainer").scrollLeft += 500}}/></button>
             <div class={styles.productcontainer} id='fourthproductcontainer'>
             {data?.products.edges.slice(30,40).map(({ node }) =>(
-              <Link href="#" class={styles.productlinks}>
+              <Link href={"/productpage/" + node.id} class={styles.productlinks}>
                 <div class={styles.productcard} key={node.id}>
                   <div class={styles.productimage}>
                     <img src={node.imageUrl} class={styles.productthumb} height={250} width={250} alt="" />

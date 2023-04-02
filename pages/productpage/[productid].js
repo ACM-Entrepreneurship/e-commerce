@@ -5,8 +5,48 @@ import styles from '../../styles/template-product-page.module.css';
 import Layout from '../../components/Layout';
 import Navbar from '../../components/Navbar';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
+import { gql, useQuery } from '@apollo/client'
+import prisma  from '../../lib/prisma';
+ 
 
-export default function ProductPage(){
+export async function getServerSideProps(context) {
+    const {productid} = context.query;
+    const product = await prisma.product.findUnique({
+        where: {
+            id : productid,
+        },
+    });
+    const uniqueproduct = JSON.parse(JSON.stringify(product))
+    const products = await prisma.product.findMany({
+        where: {
+            category : uniqueproduct.category,
+        },
+    });
+    return {
+        props: {
+            uniqueproduct,
+            prodByCategory: JSON.parse(JSON.stringify(products)),
+        }
+    }
+}
+
+
+export default function ProductPage(props){
+    const router = useRouter();
+    const uniqueproduct = props.uniqueproduct;
+    const id = uniqueproduct.id;
+    const imageUrl = uniqueproduct.imageUrl;
+    const category = uniqueproduct.category;
+    const name = uniqueproduct.name;
+    const description = uniqueproduct.description;
+    const manufacturer = uniqueproduct.manufacturer;
+    const price = uniqueproduct.price;
+
+    const data = props.prodByCategory;
+
+
+
     return (
         <>
         <Layout>
@@ -15,6 +55,8 @@ export default function ProductPage(){
         <meta name="description" content="E-commerce" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
+
+        <div class={styles.bodydiv}>
             <div class={styles.row1}>
                 <div class={styles.column_1}>
                     <ul class={styles.productImages}>
@@ -24,18 +66,19 @@ export default function ProductPage(){
                     </ul>
                 </div>
                 <div class={styles.column_2}>
-                    <h1>main image</h1>
+                    <img src={imageUrl} class={styles.productthumb} height={350} width={350} alt="" />
                 </div>
                 <div class={styles.column_3}>
-                    <h1 id={styles.prodTitle}>Product Title</h1>
+                    <h1 id={styles.prodTitle}>{name}</h1>
                     <div class={styles.topBorderLine}></div>
-                    <h1 class={styles.prodPrice}>$0.00</h1>
+                    <h1 class={styles.prodPrice}>${price}</h1>
                     <div class={styles.prodInfoLayout}>
                         <h3>Product Description: </h3>
                         <ul class={styles.productDescipList}>
-                            <li class={styles.productInfoPt}>Info 1</li>
-                            <li class={styles.productInfoPt}>Info 2</li>
-                            <li class={styles.productInfoPt}>Info 3</li>
+                            <li class={styles.productInfoPt}>Name: {name}</li>
+                            <li class={styles.productInfoPt}>Description: {description}</li>
+                            <li class={styles.productInfoPt}>Manufacturer: {manufacturer}</li>
+                            <li class={styles.productInfoPt}>Category: {category}</li>
                         </ul>
                     </div>
                     <div class={styles.topBorderLine2}></div>
@@ -63,6 +106,28 @@ export default function ProductPage(){
                     <li>Date First Available: </li>
                 </ul>
             </div>
+
+            <section class={styles.product}>
+                <button  class={styles.prebtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("firstproductcontainer").scrollLeft -= 500}}/></button>
+                <button  class={styles.nxtbtn}><Image src="/arrow.png" width={20} height={30} alt="" onClick={() => {document.getElementById("firstproductcontainer").scrollLeft += 500}}/></button>
+                    <div class={styles.productcontainer} id='firstproductcontainer'>
+                    {data?.slice(0,10).map((node) =>(
+                    <Link href={"/productpage/" + node.id} class={styles.productlinks}>
+                        <div class={styles.productcard} key={node.id}>
+                        <div class={styles.productimage}>
+                            <img src={node.imageUrl} class={styles.productimage} height={150} width={150} alt="" />
+                        </div>
+                        <div class={styles.productinfo}>
+                            <h2 class={styles.productname}>{node.name}</h2>
+                            <p class={styles.productshortdescription}>{node.description}</p>
+                            <span class={styles.price}>${node.price}</span>
+                        </div>   
+                        </div>
+                    </Link>
+                    ))}
+                    </div>
+            </section>
+        </div>
         </Layout>
         </>
     )
