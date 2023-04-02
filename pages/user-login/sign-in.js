@@ -15,25 +15,27 @@ export default function SignInPage(){
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel = "icon" href= "/minerwarehouse_logo.png"/>
         </Head>
-        <div class={styles.pic}>
-            <a href="/">
-                <Image src='/minerwarehouse_logo.png' alt='site logo' width={140} height={120} />
-            </a>
-        </div>
-        <div class={styles.center}>
-                <h1>Sign In</h1>
-                <br/>
-                <form action="" method="">
-                    <div>
-                        <input type ="text" name="email" placeholder="Email Address"></input>
-                    </div>
+        <div class={styles.mainLayout}>
+            <div class={styles.pic}>
+                <a href="/">
+                    <Image src='/minerwarehouse_logo.png' alt='site logo' width={140} height={120} />
+                </a>
+            </div>
+            <div class={styles.center}>
+                    <h1>Sign In</h1>
                     <br/>
-                    <div>
-                        <input type ="text" name="password" placeholder="Password"></input>
-                    </div>
-                </form>
-                <br/>
-                <button class={styles.btn}>SIGN IN</button>
+                    <form action="" method="">
+                        <div>
+                            <input type ="text" name="email" placeholder="Email Address"></input>
+                        </div>
+                        <br/>
+                        <div>
+                            <input type ="text" name="password" placeholder="Password"></input>
+                        </div>
+                    </form>
+                    <br/>
+                    <button class={styles.btn}>SIGN IN</button>
+            </div>
         </div>
         </>
     )

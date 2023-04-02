@@ -16,43 +16,46 @@ export default function createAccountPage(){
         <link class={styles.pic} rel = "icon" href= "/minerwarehouse_logo.png"/>
         <link rel = "icon" href= "/minerwarehouse_logo.png"/>
         </Head>
-        <div class={styles.pic}>
-            <a href="/">
-                <Image src='/minerwarehouse_logo.png' alt='site logo' width={140} height={120} />
-            </a>
-        </div>
+        <div class={styles.mainLayout}>
+            <div class={styles.pic}>
+                <a href="/">
+                    <Image src='/minerwarehouse_logo.png' alt='site logo' width={140} height={120} />
+                </a>
+            </div>
 
-        <div class={styles.center}>
-            <h1>Create Account</h1>
-            <br/>
-            <form action="" method="">
-                <div>
-                    <input type ="text" name="firstName" placeholder="First Name"></input>
-                </div>
+            <div class={styles.center}>
+                <h1>Create Account</h1>
                 <br/>
-                <div>
-                    <input type ="text" name="lastName" placeholder="Last Name"></input>
-                </div>
+                <form action="" method="">
+                    <div>
+                        <input type ="text" name="firstName" placeholder="First Name"></input>
+                    </div>
+                    <br/>
+                    <div>
+                        <input type ="text" name="lastName" placeholder="Last Name"></input>
+                    </div>
+                    <br/>
+                    <div>
+                        <input type ="text" name="email" placeholder="Email Address"></input>
+                    </div>
+                    <br/>
+                    <div>
+                        <input type ="text" name="phoneNum" placeholder="Phone Number (optional?)"></input>
+                    </div>
+                    <br/>
+                    <div>
+                        <input type ="text" name="password" placeholder="Password"></input>
+                    </div>
+                </form>
                 <br/>
-                <div>
-                    <input type ="text" name="email" placeholder="Email Address"></input>
-                </div>
+                <h6>By creating an account, you agree to ACM-E's Privacy Notice and Terms of Use</h6>
                 <br/>
-                <div>
-                    <input type ="text" name="phoneNum" placeholder="Phone Number (optional?)"></input>
-                </div>
+                <button class={styles.btn}>SIGN UP</button>
                 <br/>
-                <div>
-                    <input type ="text" name="password" placeholder="Password"></input>
-                </div>
-            </form>
-            <br/>
-            <h6>By creating an account, you agree to ACM-E's Privacy Notice and Terms of Use</h6>
-            <br/>
-            <button class={styles.btn}>SIGN UP</button>
-            <br/>
-            <br/>
-            <h3>Have an Account? <Link class={styles.signin} href="/user-login/sign-in">Sign In</Link></h3>           
+                <br/>
+                <h3>Have an Account? <Link class={styles.signin} href="/user-login/sign-in">Sign In</Link></h3>           
+            </div>
+
         </div>
         </>
     )
