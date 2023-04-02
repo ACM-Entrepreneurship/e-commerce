@@ -1,6 +1,6 @@
 .cart_layout {
     text-align: 20%;
-    background-color: #eadddd;
+    background-color: aliceblue;
     width: 65%;
     height: 700px; /*the height will need to be dynamically sized, when new items are in cart*/
     border-radius: 10px;
@@ -42,7 +42,7 @@
 }
 
 .priceSideBar{
-    background-color: #eadddd;
+    background-color: aliceblue;
     width: 30%;
     height: 300px;
     float: left;
@@ -69,8 +69,8 @@
     border-radius: 5px;
     border: 1px solid black;
     margin-top: 90px;
-    margin-left: 120px;
-    width: 50%;
+    margin-left: 170px;
+    width: 70%;
     height: 50px;
 }
 
