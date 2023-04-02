@@ -84,7 +84,7 @@ export default function ProductPage(props){
                     <div class={styles.topBorderLine2}></div>
                 </div>
                 <div class={styles.column_4}>
-                    <h1 class={styles.prodPrice}>$0.00</h1>
+                    <h1 class={styles.prodPrice}>${price}</h1>
                     <h3 class={styles.stockInfo}>In stock</h3>
                     <button class={styles.cartBtn}>ADD TO CART</button>
                     <button class={styles.buyBtn}>BUY NOW</button>

@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 //import openSideNav from "components/Sidenavbar"
 
-
 const openSideNav = () => {
     return (
         (document.getElementById("close-burger").style.marginLeft = "260px")
@@ -45,8 +44,17 @@ const Navbar = () => {
                     </li>
                     <li>
                         <div className='nav-signin'>
-                            <Image src='/signin-icon.png' alt='main signin icon' width={30} height={30} />
-                            <a href="/user-login/create-account">Welcome<br />Sign in/Sign up</a>
+                            <a href="/user-login/create-account">
+                                <Image src='/signin-icon.png' alt='main signin icon' width={30} height={30} />
+                                <p>Sign In / Sign Up</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div className='nav-mainAccount'>
+                            <a href='/main-account/main-account-page'>
+                                <Image src='/user_settings_icon.png' alt='user settings icon' width={60} height={60}/>
+                            </a> 
                         </div>
                     </li>
                     <li>
