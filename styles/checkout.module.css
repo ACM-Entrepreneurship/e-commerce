@@ -28,7 +28,7 @@
 }
 
 .leftCol {
-    background-color: #eadddd;
+    background-color: aliceblue;
     height: 900px;
     width: 50%;
     float: left;
@@ -40,7 +40,7 @@
 .container {
     width: 90%;
     height: 80px;
-    background-color: darkkhaki;
+    /*background-color: darkkhaki;*/
     margin: auto;
     margin-top: 2%;
 }
@@ -50,7 +50,7 @@
 }
 
 .rightCol {
-    background-color: #eadddd;
+    background-color: aliceblue;
     height: 600px;
     width: 30%;
     float: left;
