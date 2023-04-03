@@ -11,6 +11,7 @@ export default function CheckOutPage(){
         <title>MinerWarehouse - shopping cart</title>
         <meta name="description" content="E-commerce" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel = "icon" href= "/minerwarehouse_logo.png"/>
         </Head>
         <div class={styles.header}>
             <div class={styles.pic}>
