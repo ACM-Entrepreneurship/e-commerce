@@ -1,0 +1,27 @@
+.user_info_layout {
+    text-align: center;
+    /*fix this, its messing up navbar*/
+    margin: auto;
+    /*background-color: grey;*/
+    position: relative;
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: #333;
+    color:#fff;
+    padding: 10px 15px;
+    border: none;
+    /*width: 30%;*/
+    margin: 5px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: red;
+    color:#fff;
+}
+
+
+.whitespace{
+    padding-bottom: 20%;
+}

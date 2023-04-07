@@ -1,0 +1,255 @@
+.bodydiv {
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+
+.row1 {
+    margin: auto;
+}
+.column_1 {
+    background-color: aliceblue;
+    height: 500px;
+    width: 15%;
+    float: left;
+    margin: 50px 25px;
+}
+.column_2 {
+    background-color: aliceblue;
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin: 50px 25px;
+    align-items: center;
+}
+
+.productthumb {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.column_3 {
+    background-color: aliceblue;
+    height: 500px;
+    width: 25%;
+    float: left;
+    margin: 50px 25px;
+}
+.column_4 {
+    background-color: aliceblue;
+    height: 500px;
+    width: 15%;
+    float: left;
+    margin: 50px 25px;
+    border-radius: 15px;
+}
+ 
+.prodInfoLayout {
+    margin-top: 25%;
+    margin-left: 3%;
+}
+
+#prodTitle {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.prodPrice {
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.topBorderLine {
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 10px;
+}
+
+.topBorderLine2{
+    margin-top: 33%;
+    width: 95%;
+    margin-left: 10px; 
+}
+.productInfoPt {
+    margin-left: 5%;
+}
+
+.stockInfo {
+    margin-top: 40%;
+    margin-left: 5%;
+    color: rgb(36, 219, 36);
+}
+
+.cartBtn {
+    background-color: rgb(246, 246, 26);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 180px;
+    margin-left: 37px;
+    width: 75%;
+    height: 50px;
+}
+.cartBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+
+.buyBtn {
+    background-color: rgb(246, 154, 26);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: 37px;
+    width: 75%;
+    height: 50px;
+}
+
+.buyBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+.Image {
+    list-style-type: none;
+}
+.productInfo {
+    margin-right: 5%;
+    text-align: left;
+    background-color: aliceblue;
+    padding: 1%;
+}
+
+.productInfo ul {
+    list-style: none;
+}
+
+.clr{
+    clear:both;
+}
+
+.buyBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+.Image {
+    list-style-type: none;
+}
+.productInfo {
+    margin-left: 5%;
+    text-align: left;
+}
+.clr{
+    clear:both;
+}
+
+/*products section*/
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background-color: aliceblue;
+    margin-top: 30px;
+  }
+  
+  .productcontainer {
+    padding: 0 0vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: 15px;
+  }
+  
+  .productcontainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .productlinks {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .productcard {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 350px;
+    margin-right: 40px;
+    font-size: 15px;
+  }
+  
+  .productimage {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .productinfo {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+  }
+  
+  .productname {
+    text-transform: uppercase;
+  }
+  
+  .productshortdescription {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .prebtn,
+  .nxtbtn {
+    border: none;
+    width: 1vw;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    margin-top: 7%;
+    z-index: 8;
+  }
+  
+  .prebtn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxtbtn {
+    right: 0;
+  }
+  
+  .prebtn img,
+  .nxtbtn img {
+    opacity: 0.2;
+  }
+  
+  .prebtn:hover img,
+  .nxtbtn:hover img {
+    opacity: 1;
+  }
+
+  /***********************/

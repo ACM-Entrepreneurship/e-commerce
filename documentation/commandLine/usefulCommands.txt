@@ -12,7 +12,9 @@ DB:
     - After manual remote change:
         - npx prisma db pull
         - npx prisma migrate dev --name introspected_change
-    - More infor: https://www.prisma.io/docs/guides/database/developing-with-prisma-migrate/troubleshooting-development
+    - More info: https://www.prisma.io/docs/guides/database/developing-with-prisma-migrate/troubleshooting-development
+    - Regenerate prisma client (and pothos types)
+        - npx prisma generate
     
 Authentication
 - Make localhost:3000 availabe
