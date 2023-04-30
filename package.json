@@ -27,13 +27,15 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.4",
-    "react-hot-toast": "^2.4.0"
+    "react-hot-toast": "^2.4.0",
+    "react-icons": "^4.8.0"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.20.13",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "prisma": "^4.10.1"
+    "prisma": "^4.10.1",
+    "typescript": "5.0.3"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

@@ -1,0 +1,84 @@
+.cart_layout {
+    text-align: 20%;
+    background-color: aliceblue;
+    width: 65%;
+    height: 700px; /*the height will need to be dynamically sized, when new items are in cart*/
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 20px;
+    float: left;
+}
+.shoppingcarttext {
+    margin-left: 20px;
+}
+.emptyCartText {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.itemLink {
+    color: rgb(110, 110, 252);
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.priceAlign {
+    margin-left: 92%;
+}
+
+.topBorderLine {
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 20px;
+
+}
+
+.cart_layout_Subtotal_p {
+    margin-left: 88%;
+    margin-top: 10px;
+}
+
+.cart_btm_layout {
+    margin-top: 37%;
+}
+
+.priceSideBar{
+    background-color: aliceblue;
+    width: 30%;
+    height: 300px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.totalSideBar {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.totalPriceSB {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#checkoutBtn {
+    background-color: rgb(246, 246, 26);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-top: 90px;
+    margin-left: 170px;
+    width: 70%;
+    height: 50px;
+}
+
+#checkoutBtn:hover {
+    background-color: red;
+    color:#fff;
+}
+
+.whitespace {
+    margin-top: 80%;
+}

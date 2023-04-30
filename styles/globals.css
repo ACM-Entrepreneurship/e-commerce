@@ -12,6 +12,12 @@ html,body
     overflow-x: hidden;
 }
 
+.bodydiv {
+  height: 100%;
+  width: 75%;
+  margin: 0 auto;
+}
+
 nav{
   height: 100%;
   display: flexbox;
@@ -43,14 +49,14 @@ nav .nav-belt-button ul{
 }
 
 nav .nav-belt-button li{
-  width: 40%;
+  width: 30%;/*original: 40*/
   display: inline-block;
   text-decoration: none;
-  margin: auto 5px;
+  margin: auto 5px; /* margin: auto 5px; */
 }
 
 nav .nav-belt-button .navbar-search input[type=text] {
-  width: 350%;
+  width: 350%; /* original: 350*/
   height: 40px;
   border-radius: 10px;
   font-size: 25px;
@@ -70,12 +76,21 @@ nav .nav-belt-button .navbar-search li{
 
 nav .nav-belt-button .nav-signin{
   display: block;
-  margin-left: 50%;
+  margin-left: 5%; /*original: 50 before adding user settings*/
+  padding-left: 50%;
+
 }
+
+nav .nav-belt-button .nav-mainAccount{
+  display: block;
+  margin-left: 10%;
+  padding-left: 70%;
+}
+
 
 nav .nav-belt-button .nav-cart{
   display: block;
-  margin-left: 35%;
+  margin-left: 15%; /*original: 35 before adding user settings%*/
 }
 
 nav .nav-main{
@@ -158,6 +173,7 @@ nav .nav-main{
   margin-top: -180px;
   left:-250px;
   transition: all ease-in 0.3s;
+  z-index: 50;
 }
 
 .nav-side-menu.open{
