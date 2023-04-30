@@ -5,8 +5,14 @@ import styles from '../../styles/sign-in.module.css';
 import Layout from '../../components/Layout';
 import Navbar from '../../components/Navbar';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function createAccountPage(){
+    const router = useRouter();
+    function handleClick() {
+        
+        router.push('/');
+    }
     return (
         <>
         <Head>
@@ -50,7 +56,7 @@ export default function createAccountPage(){
                 <br/>
                 <h6>By creating an account, you agree to ACM-E's Privacy Notice and Terms of Use</h6>
                 <br/>
-                <button class={styles.btn}>SIGN UP</button>
+                <button class={styles.btn} onClick={handleClick}>SIGN UP</button>
                 <br/>
                 <br/>
                 <h3>Have an Account? <Link class={styles.signin} href="/user-login/sign-in">Sign In</Link></h3>           

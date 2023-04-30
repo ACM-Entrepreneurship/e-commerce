@@ -5,8 +5,14 @@ import styles from '../../styles/sign-in.module.css';
 import Layout from '../../components/Layout';
 import Navbar from '../../components/Navbar';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function SignInPage(){
+    const router = useRouter();
+    function handleClick() {
+        
+        router.push('/');
+    }
     return (
         <>
         <Head>
@@ -34,7 +40,7 @@ export default function SignInPage(){
                         </div>
                     </form>
                     <br/>
-                    <button class={styles.btn}>SIGN IN</button>
+                    <button class={styles.btn} onClick={handleClick}>SIGN IN</button>
             </div>
         </div>
         </>
